@@ -6,7 +6,13 @@ workspace/src/build/
 workspace/src/lib/
 workspace/src/install/
 
+build/
+install/
+log/
+# ROS2 specific
+
 .vscode/.ropeproject/
+slam/src/orbslam2/ORBvoc.txt
 
 log/
 libs/
