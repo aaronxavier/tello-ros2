@@ -34,14 +34,14 @@ def generate_launch_description():
         ),
 
         # RQT topic debug tool
-        Node(
-            package='rqt_gui',
-            executable='rqt_gui',
-            output='screen',
-            namespace='/',
-            name='rqt',
-            respawn=False
-        ),
+        # Node(
+        #     package='rqt_gui',
+        #     executable='rqt_gui',
+        #     output='screen',
+        #     namespace='/',
+        #     name='rqt',
+        #     respawn=False
+        # ),
 
         # RViz data visualization tool
         Node(
@@ -51,7 +51,7 @@ def generate_launch_description():
             namespace='/',
             name='rviz2',
             respawn=True,
-            arguments=['-d', '/home/tentone/Git/tello-slam/workspace/src/rviz.rviz']
+            arguments=['-d', '/home/aaron/Works/tello_ws/src/rviz.rviz']
         ),
 
         # Static TF publisher
